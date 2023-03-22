@@ -1,0 +1,7 @@
+<!-- {{ JSONimage | json }} -->
+<div class="card carta">
+    <img class="card-img-top imagen-carta" [src]="JSONimage['links']['0']['href']" alt="Card image">
+    <div class="card-body">
+      <h6 class="card-title">{{ JSONimage['data']['0']['title'] }}</h6>
+    </div>
+</div>

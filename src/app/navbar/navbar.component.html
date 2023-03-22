@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a (click)="redirDailyImage('daily')"><img class="img-title" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" alt=""></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" (click)="redirDailyImage('daily')">Daily Image<span class="sr-only"></span></a>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarDropdown">
+            Planets
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" (click)="redirDailyImage('galery/mercury')">Mercury</a>
+            <a class="dropdown-item" (click)="redirDailyImage('galery/venus')">Venus</a>
+            <a class="dropdown-item" (click)="redirDailyImage('galery/earth')">Earth</a>
+            <a class="dropdown-item" (click)="redirDailyImage('galery/mars')">Mars</a>
+            <a class="dropdown-item" (click)="redirDailyImage('galery/jupiter')">Jupiter</a>
+            <a class="dropdown-item" (click)="redirDailyImage('galery/saturn')">Saturn</a>
+            <a class="dropdown-item" (click)="redirDailyImage('galery/uranius')">Uranius</a>
+            <a class="dropdown-item" (click)="redirDailyImage('galery/neptune')">Neptune</a>
+
+            <a class="dropdown-item" (click)="redirDailyImage('galery/sun')">Sun</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>

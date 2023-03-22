@@ -1,0 +1,15 @@
+<div class="all">
+  <div class="card carta">
+    <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
+    <div class="media-content">
+      <iframe *ngIf=" mediaType != 'image' " class="card-img-top media" [src]="urlMedia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+      <img *ngIf=" mediaType == 'image' " class="card-img-top media" [src]="urlMedia" alt="No cargo Imagen" srcset="">
+    </div>
+    
+    <div class="card-body cuerpo">
+      <h4 class="card-title">{{ title }}</h4>
+      <p class="card-text">{{ explanation }}</p>
+    </div>
+  </div>
+</div>

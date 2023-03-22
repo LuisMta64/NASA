@@ -1,0 +1,22 @@
+.all{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    .container{
+        margin: 25px 0;
+        width: 1100px;
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #ffffff71;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px #0c0c0cee;
+        gap:15px;
+        padding: 15px;
+        .imagen{
+            width: 0;
+            flex: 1 0 325px;
+            height: 350px;
+        }
+    }
+}
+    
